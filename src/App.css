@@ -28,23 +28,22 @@ button:active {
 }
 
 #wrapper {
-  height: 100vh;
-  
+  height: 100vh;  
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #app {
-  width: 320px;
-  height: 520px;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
 .calculator {
   width: 100%;
   height: 100%;
-  background: black;
+  background: white;
   
   display: flex;
   flex-direction: column;
@@ -56,11 +55,11 @@ button:active {
 
 .calculator-display {
   color: #00e6ac  ;
-  background: #1c191c;
-  line-height: 130px;
-  font-size: 6em;
-  
+  background: #3366cc;
+  line-height: 150%;
+  font-size: 5em;  
   flex: 1;
+  height: 15%;
 }
 
 .auto-scaling-text {
@@ -75,13 +74,13 @@ button:active {
 }
 
 .calculator-keypad {
-  height: 400px;
-  
+  height: 85%;  
   display: flex;
+  width: 100%;
 }
 
 .calculator .input-keys {
-  width: 240px;
+  width: 85%;
 }
 
 .calculator .function-keys {
@@ -90,15 +89,15 @@ button:active {
 
 .calculator .digit-keys {
   background: #e0e0e7;
-  
+  height: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
 }
 
 .calculator-key {
-  width: 80px;
-  height: 80px;
+  width: 33.33%;
+  height: auto;
   /*border-top: 1px solid #777;
   border-right: 1px solid #666;*/  
   text-align: center;
@@ -114,24 +113,29 @@ button:active {
   font-size: 2.25em;
 }
 .calculator .digit-keys .key-0 {
-  width: 160px;
+  width: 50%;
   text-align: left;
-  padding-left: 32px;
+  padding-left: 16%;
 }
 .calculator .digit-keys .key-dot {
-  padding-top: 1em;
-  font-size: 0.75em;
+  width: 50%;
+  text-align: right;
+  padding-right: 16%;
 }
 .calculator .operator-keys .calculator-key {
+  width: 100%;
+  height: 20%;
   color: white;
   border-right: 0;
   font-size: 3em;
 }
 
 .calculator .function-keys {
+  height: 20%;
   background: #e0e0e7;
   /*background: linear-gradient(to bottom, rgba(202,202,204,1) 0%, rgba(196,194,204,1) 100%);*/
 }
 .calculator .operator-keys {
+  width: 15%;
   background:  linear-gradient(to bottom, rgba(33, 150, 243,1) 0%, rgba(33, 150, 243,1) 100%)
 }
