@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
--> git clone https://github.com/PriyankCR7/react-calculator.git
+<code>git clone https://github.com/PriyankCR7/react-calculator.git </code>
 
--> npm install
+<code>npm install</code>
 
--> npm start
+<code>npm start</code>
