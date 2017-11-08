@@ -91,6 +91,7 @@ class Calculator extends Component {
     operator: null,
     waitingForOperand: false
   };
+
   
   clearAll() {
     this.setState({
@@ -191,7 +192,7 @@ class Calculator extends Component {
   
   handleKeyDown = (event) => {
     let { key } = event
-    
+
     if (key === 'Enter')
       key = '='
     
@@ -218,6 +219,10 @@ class Calculator extends Component {
       } else {
         this.clearAll()
       }
+    }
+    else if (key === 'F1' || key === 'F2' || key === 'F3' || key === 'F4' || key === 'F5' || key === 'F6' || key === 'F7' || key === 'F8' || key === 'F9' || key === 'F10' || key === 'F11' || key === 'F12') {
+      event.preventDefault()
+      this.clearDisplay()
     }
   };
   
@@ -248,6 +253,7 @@ class Calculator extends Component {
             <div className="digit-keys">
               <CalcKey className="key-0" onPress={() => this.inputDigit(0)}>0</CalcKey>
               <CalcKey className="key-dot" onPress={() => this.inputDot()}>●</CalcKey>
+              <CalcKey className="key-back" onPress={() => this.clearLastChar()}>⟵</CalcKey>
               <CalcKey className="key-1" onPress={() => this.inputDigit(1)}>1</CalcKey>
               <CalcKey className="key-2" onPress={() => this.inputDigit(2)}>2</CalcKey>
               <CalcKey className="key-3" onPress={() => this.inputDigit(3)}>3</CalcKey>
